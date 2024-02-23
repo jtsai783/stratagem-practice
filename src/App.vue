@@ -9,7 +9,7 @@ const superEarthIcon = new URL('@/assets/superearth.png', import.meta.url).href
         <div class="border-y-8 border-white h-full">
           <div class="flex items-center flex-col absolute vertical-center w-full gap-5">
             <div class="text-white text-3xl font-medium">
-              Stratagem Heroeeees
+              Stratagem Practice
             </div>
             <div class="text-hdyellow">
               Enter any Stratagem input to Start!
