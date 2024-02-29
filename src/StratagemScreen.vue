@@ -2,7 +2,7 @@
 import ArrowImg from './ArrowImg.vue';
 
 const stratagemIcon = new URL('@/assets/icons/120mm_barrage.png', import.meta.url).href
-const input = ['R', 'R', 'D', 'L', 'R', 'D', 'R', 'D', 'L', 'R', 'D']
+const input = ['R', 'R', 'D', 'L', 'R', 'D', ]
 
 </script>
 
