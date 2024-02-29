@@ -1,20 +1,20 @@
 <script setup>
 const superEarthIcon = new URL('@/assets/superearth.png', import.meta.url).href
+import StartScreen from './StartScreen.vue';
+import StratagemScreen from './StratagemScreen.vue'
+import {useScreenStore} from '@/stores/screen'
+
+const screen = useScreenStore()
+
 </script>
 
 <template>
   <div class="basis-3/5 flex-auto relative">
     <div class="h-full relative bg-black/75 isolate z-10">
       <div class="h-full py-16">
-        <div class="border-y-8 border-white h-full">
-          <div class="flex items-center flex-col absolute vertical-center w-full gap-5">
-            <div class="text-white text-3xl font-medium">
-              Stratagem Practice
-            </div>
-            <div class="text-hdyellow">
-              Enter any Stratagem input to Start!
-            </div>
-          </div>
+        <div class="border-y-8 border-white h-full flex items-center">
+          <StartScreen v-if="screen.currentScreen === 'start'"></StartScreen>
+          <StratagemScreen v-else></StratagemScreen>
         </div>
       </div>
     </div>
