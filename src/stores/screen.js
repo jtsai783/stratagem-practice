@@ -4,7 +4,8 @@ export const useScreenStore = defineStore('screen', {
   state: () => {
     return {
       currentScreen: 'bleh',
-      currentInput: []
+      currentInput: [],
+      currentStratagem: null
     }
   }
 })
